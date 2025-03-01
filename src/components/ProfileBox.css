@@ -1,0 +1,42 @@
+.profile-box {
+  border: 1px solid #212529;
+  padding: 20px;
+  background-color: #ffffff; /* Saydam arka plan rengi */
+  text-align: center;
+  max-width: 200px; /* Maksimum genişlik */
+  margin: 10px 0;
+  position: sticky; /* Ekranda sabit kalmasını sağlar */
+  top: 20px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-box h3 {
+  margin: 0;
+  font-size: 18px;
+  color: wheat;
+}
+
+.logout-button {
+  background-color: #ff0000; /* Butonun arka plan rengi */
+  color: wheat; /* Yazı rengi */
+  border: none; /* Kenarlık kaldırma */
+  padding: 10px 20px; /* İç boşluklar */
+  border-radius: 5px; /* Köşe yuvarlatma */
+  cursor: pointer; /* İmleç değişikliği */
+  font-size: 16px; /* Yazı boyutu */
+  transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.logout-button:hover {
+  background-color: #580101; /* Hover durumu için arka plan rengi */
+}
+
+.logout-button:active {
+  background-color: #580101; /* Tıklama durumu için arka plan rengi */
+}

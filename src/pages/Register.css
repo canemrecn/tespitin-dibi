@@ -1,0 +1,82 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* Tam ekran yüksekliği */
+  background: url('/adsız1.png') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 60px; /* Navbar yüksekliği kadar boşluk + ekstra boşluk */
+}
+
+.register-box {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8); /* Şeffaf beyaz arka plan */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 800px; /* Genişlik arttırıldı */
+  text-align: center;
+  height: auto;
+  position: relative; /* Üst üste gelme durumunu düzenlemek için */
+  margin-top: 20px; /* Navbar ile üst üste gelmemesi için üstten boşluk */
+}
+
+.register-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%; /* Sol taraf genişliği */
+  padding-right: 20px; /* Sağ tarafla aradaki boşluk */
+}
+
+.register-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%; /* Sağ taraf genişliği */
+}
+
+.register-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.adsiz-image {
+  width: 100px;
+  height: auto;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+}
+
+.register-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.register-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}

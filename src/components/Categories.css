@@ -1,0 +1,26 @@
+.categories-container {
+  margin-top: 20px;
+}
+
+.categories-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.categories-card {
+  width: 250px; /* Kart genişliğini ayarlayın */
+  height: 350px; /* Kart yüksekliğini ayarlayın */
+  margin-bottom: 20px;
+}
+
+.card-image {
+  height: 200px; /* Resmin yüksekliğini ayarlayın */
+  object-fit: cover; /* Resmi kartın içine sığdırın */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

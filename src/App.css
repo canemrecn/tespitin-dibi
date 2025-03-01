@@ -1,0 +1,187 @@
+.App {
+    position: relative;
+    min-height: 100vh;
+}
+
+.App::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/adsız1.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlar */
+    background-color: #f8f9fa; /* Navbar arkaplan rengini ayarlayın */
+    height: 70px; /* Navbar yüksekliğini ayarlayın */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalamak için */
+    padding: 0 20px; /* Yatayda boşluk eklemek için */
+}
+
+.content-wrapper {
+    padding-top: 90px; /* Navbar yüksekliğine göre ayarlayın */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.left-column {
+    max-width: 200px;
+}
+
+.center-column {
+    flex: 2;
+}
+
+.right-column {
+    max-width: 250px;
+    position: sticky;
+    top: 90px; /* Navbar yüksekliğine göre ayarlayın */
+}
+
+.profile-box {
+    border: 1px solid #212529;
+    padding: 20px;
+    background-color: #212529; /* Saydam arka plan rengi */
+    text-align: center;
+    max-width: 200px; /* Maksimum genişlik */
+    margin: 10px 0;
+    position: sticky; /* Ekranda sabit kalmasını sağlar */
+    top: 30px;
+    color: wheat;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: wheat;
+    margin-top: 30px;
+}
+
+.logout-button {
+    background-color: #ff0000; /* Butonun arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık kaldırma */
+    padding: 10px 20px; /* İç boşluklar */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    cursor: pointer; /* İmleç değişikliği */
+    font-size: 16px; /* Yazı boyutu */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.logout-button:hover {
+    background-color: #580101; /* Hover durumu için arka plan rengi */
+}
+
+.logout-button:active {
+    background-color: #580101; /* Tıklama durumu için arka plan rengi */
+}
+
+.categories-container {
+    margin-top: 50px;
+}
+
+.categories-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories-card {
+    width: 250px; /* Kart genişliğini ayarlayın */
+    height: 350px; /* Kart yüksekliğini ayarlayın */
+    margin-bottom: 20px;
+}
+
+.card-image {
+    height: 200px; /* Resmin yüksekliğini ayarlayın */
+    object-fit: cover; /* Resmi kartın içine sığdırın */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* İçerik ile navbar arasına ekstra boşluk ekleyin */
+}
+
+.post-card {
+    width: 50%;
+    margin-bottom: 100px; /* Kartlar arasına boşluk ekleyin */
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment small {
+    display: flex;
+    align-items: center;
+}
+
+.comment img {
+    margin-right: 5px;
+}
+
+.comments-section {
+    margin-top: 10px;
+}
+
+.white-text {
+    color: white;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.autocomplete-suggestions {
+    position: absolute;
+    top: 100%;
+    right: 150px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 100px;
+    max-width: 500px;
+    overflow-y: auto;
+}

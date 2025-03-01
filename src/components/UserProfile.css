@@ -1,0 +1,25 @@
+.profile-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .post-card {
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+  }
+  .white-text {
+    color: white;
+  }
+  

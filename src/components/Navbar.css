@@ -1,0 +1,100 @@
+/* Navbar.css */
+.logo {
+  width: 70px;
+  height: 50px;
+}
+
+/* Navbar ve içerik için gerekli ayarlamalar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlar */
+  background-color: black !important; /* Navbar arkaplan rengini ayarlayın */
+  color: white !important; /* Yazı renklerini beyaz yapın */
+}
+
+.navbar a {
+  color: white !important; /* Navbar içindeki linklerin rengini beyaz yapın */
+}
+
+.navbar .form-control {
+  background-color: white; /* Arama kutusunun arkaplan rengini beyaz yapın */
+  color: black; /* Arama kutusunun yazı rengini siyah yapın */
+}
+
+.navbar .btn-outline-success {
+  color: white; /* Arama butonunun yazı rengini beyaz yapın */
+  border-color: white; /* Arama butonunun kenar rengini beyaz yapın */
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: white; /* Arama butonuna hover yapıldığında arkaplan rengini beyaz yapın */
+  color: black; /* Arama butonuna hover yapıldığında yazı rengini siyah yapın */
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  top: 100%;
+  right: 150px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 100px;
+  max-width: 500px;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  padding-top: 70px; /* Navbar yüksekliğine göre ayarlayın */
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* İçerik ile navbar arasına ekstra boşluk ekleyin */
+}
+
+.post-card {
+  width: 50%;
+  margin-bottom: 20px; /* Kartlar arasına boşluk ekleyin */
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment small {
+  display: flex;
+  align-items: center;
+}
+
+.comment img {
+  margin-right: 5px;
+}
+
+.comments-section {
+  margin-top: 10px;
+}
+
+.white-text {
+  color: white;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 300px; /* Arama kutusunun genişliğini ayarlayın */
+}
